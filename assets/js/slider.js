@@ -1,5 +1,14 @@
 const slides = document.querySelectorAll('.slide');
+
+
+
+
+
 const prevBtn = document.querySelector('.prev-button');
+
+
+
+
 const nextBtn = document.querySelector('.next-button');
 
 let current = 0;
@@ -13,6 +22,7 @@ function updateSlide(index) {
 function showNextSlide() {
   current = (current + 1) % slides.length;
   console.log("showNextSlide:" + current);
+  //တမင်တကာ ‌ရေးထားတာ Inspectလုပ်ရင် Log List ပေါ်နေအောင်လို့ 
   updateSlide(current);
 }
 
